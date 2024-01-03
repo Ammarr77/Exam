@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>A11Store.com</title>
+   <link rel="stylesheet" href="e-commerce.css" >
+</head>
+<body>
+    <!--The Style-->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(pexels-skyler-ewing-10449329\ \(Original\).mp4);
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li button{
+    background-color: transparent;
+    color: #840000;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+nav ul li button:focus{
+    background-color: #fff;
+    color: rgb(75, 32, 32);
+    border-radius: 20px;
+}
+nav ul li button:hover{
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+img{
+    background-color: transparent;
+    margin: 100px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-left: 25%;
+}
+.btn{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    display: flex;
+    width: 300px;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    border-radius: 40px;
+    margin-left: 100PX;
+    margin-top:  -10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(122, 77, 77);
+    color: rgb(128, 0, 0);
+}
+.slider table{
+   width: 400vw; 
+   transition: 1s;
+}     
+.container{
+    width: 100vw;
+    overflow: hidden;
+}
+.Footerr
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    display: inline-block;
+}
+.n1
+{
+    display: block;
+    justify-content: left;
+    align-items: left;
+}
+.n2
+{
+    display: block;
+    justify-content: left;
+    align-items: left;
+}
+.n3
+{
+    display: block;
+    justify-content: left;
+    align-items: left;
+}
+    </style>
+   <div>
+       <nav>
+           <ul>
+               <li><button onclick="slider(0)">Shoes</button></li>
+               <li><button onclick="slider(1)">Pants</button></li>
+               <li><button onclick="slider(2)">Caps</button></li>
+               <li><button onclick="slider(3)">T-Shirts</button></li>
+           </ul>
+           <div>
+            <button href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/ShoppingCart.html">ShoppingCart</button>
+            <img src="C:\Users\IT\Desktop\Day 2\1.jpg">
+            <input type="number" class="Counter">
+           </div>
+       </nav>
+   </div>
+   <div class="container">
+       <div class="slider" id="slider">
+           <table id="table">
+               <tr>
+                   <td><img class="img1" src="air.png" alt="">
+                   <a href="file:///C:/Users/IT/Desktop/tasks%20of%20the%20day/login.html"><button>Buy Now</button></a> 
+
+                   <td><img class="img2" src="hippie.png" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+                   <td><img class="img3" src="jordan.png" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+                   
+                   <td><img class="img1" src="pant1.jpg" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+                   <td><img class="img2" src="pant2.jpg" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+                   <td><img class="img3" src="pant3.jpg" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+       
+                   <td><img class="img1" src="Cap1.jfif" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+                   <td><img class="img2" src="Cap2.jfif" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+                   <td><img class="img3" src="Cap3.jfif" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+       
+                   <td><img class="img1" src="T_shirt1.jfif" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+                   <td><img class="img2" src="T_shirt2.jfif" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+                   <td><img class="img3" src="T_shirt3.jfif" alt="">
+                    <a href="file:///C:/Users/IT/Desktop/Ammar%20Yasser%20(Wheeler%201)%20Web%20Competency/login.html"><button>Buy Now</button></a> 
+               </tr>
+           </table>
+       </div>
+   </div>
+   <div>
+    <nav>
+        <footer class="Footerr">
+            <ul>
+                <li class="n1"><h1>Branches</h1></li>
+                <p>Mall of Egypt , Mall of Arabia , Sheikh Zayed</p>
+                <li class="n2"><h1>Contacts</h1></li>
+                <p>Phone:01279564100</p>
+                <li class="n3"><h1>Accounts</h1></li>
+                <p>Instagram : _ammaryasserr_</p>
+                <P>Facebook : Ammar</P>
+            </ul>
+        </footer>
+    </nav>
+   </div>
+   <script>
+        function slider(i){
+        document.getElementById('table').style.marginLeft = `${-100 * i}vw`;
+    }
+   </script>
+</body>
+</html>

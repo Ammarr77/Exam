@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signUp</title>
+</head>
+
+<body>
+  <form>
+    <h2>SignUp</h2>
+    <label>Name</label>
+    <input id="userInp" type="text"> <br>
+    <label>Email</label>
+    <input id="emailInp" type="email"><br>
+    <label for="rd">Gender</label>
+    <input type="radio" name="rd" id="r1">
+    <label for="r1">Male</label>
+    <input type="radio" name="rd" id="r2">
+    <label for="r2">Female</label><br>
+    <label>Pass</label>
+    <input id="inpPass" type="password"><br>
+    <label>Cpass</label>
+    <input id="inpCpass" type="password"><br>
+    <label for="City">City</label>
+    <select name="City" id="City">
+      <option value="Cairo">Cairo</option>
+      <option value="Giza">Giza</option>
+      <option value="Chiccago">Chiccago</option>
+      <option value="California">Kalefornia</option>
+    </select> <br>
+    <button onclick="SignUp()" type="button">Sign Up</button> <br> <br>
+    <button type="button"><a href="Quiz.html">QuizApp</a></button>
+  </form>
+  <script src="js/signUp.js"></script>
+</body>
+
+</html>

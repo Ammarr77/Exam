@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <style>
+    .container {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <table class="container">
+    <h1 class="Questions">Are you satisfied with our Service?</h1>
+    <label for="q1">yes</label>
+    <input type="radio" class="correct1">
+    <label for="q2">no</label>
+    <input type="radio">
+    <button onclick="next(1)" type="button">Next</button>
+  </table>
+  <table class="container">
+    <h1 class="Questions">Do you find our website user-friendly?</h1>
+    <label for="q3">yes</label>
+    <input type="radio" class="correct2">
+    <label for="q4">no</label>
+    <input type="radio">
+    <button onclick="next(2)" type="button">Next</button>
+  </table>
+  <table class="container">
+    <h1 class="Questions">Would you recommend us to others?</h1>
+    <label for="q1">yes</label>
+    <input type="radio" class="correct3">
+    <label for="q2">no</label>
+    <input type="radio">
+    <button class="Submit" onclick="result()" type="button">Submit</button>
+  </table>
+  <script>
+    document.getElementsByClassName("container")[0].style.display = "block";
+    function next(id) {
+      document.getElementsByClassName("container")[id - 1].style.display = "none";
+      document.getElementsByClassName("container")[id].style.display = "block";
+    }
+    var score = 0;
+    function result() {
+      var correct1 = document.querySelector('.correct1');
+      var correct2 = document.querySelector('.correct2');
+      var correct3 = document.querySelector('.correct3');
+
+      if (correct1.checked) {
+        score++;
+      }
+      if (correct2.checked) {
+        score++;
+      }
+      if (correct3.checked) {
+        score++;
+      }
+      alert("Thank you for your feedback! Total Yes points : " + score);
+      location.reload();
+    }
+  </script>
+</body>
+</html>
